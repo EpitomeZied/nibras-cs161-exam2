@@ -4,7 +4,7 @@
   "description": "CS161 Exam 1 — JavaScript Fundamentals",
   "main": "src/solution.js",
   "scripts": {
-    "test": "node --test test/"
+    "test": "node --test test/solution.test.js"
   },
   "engines": {
     "node": ">=20"
