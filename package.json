@@ -1,0 +1,12 @@
+{
+  "name": "nibras-cs161-exam1",
+  "version": "1.0.0",
+  "description": "CS161 Exam 1 — JavaScript Fundamentals",
+  "main": "src/solution.js",
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
