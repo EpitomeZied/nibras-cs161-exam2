@@ -12,7 +12,7 @@
  * @returns {number}
  */
 function sum(a, b) {
-  // TODO: implement this function
+  return a + b;
 }
 
 /**
@@ -22,7 +22,8 @@ function sum(a, b) {
  * @returns {number}
  */
 function factorial(n) {
-  // TODO: implement this function
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
 }
 
 /**
@@ -32,7 +33,8 @@ function factorial(n) {
  * @returns {boolean}
  */
 function isPalindrome(str) {
-  // TODO: implement this function
+  const normalized = str.toLowerCase();
+  return normalized === normalized.split('').reverse().join('');
 }
 
 module.exports = { sum, factorial, isPalindrome };
