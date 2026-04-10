@@ -45,8 +45,7 @@ factorial(5) → 120
 
 ## Part 3 — Palindrome
 
-Implement a function that returns `true` if the given string is a palindrome
-(reads the same forwards and backwards, case-insensitive), `false` otherwise.
+Implement a function that returns `true` if the given string is a palindrome (reads the same forwards and backwards, case-insensitive), `false` otherwise.
 
 ```js
 function isPalindrome(str) {

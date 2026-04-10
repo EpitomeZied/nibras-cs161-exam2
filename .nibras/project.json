@@ -1,5 +1,5 @@
 {
-  "projectKey": "cs161/exam1",
+  "projectKey": "cs161/exam2",
   "releaseVersion": "2026-03-01",
   "apiBaseUrl": "https://nibras-api.fly.dev",
   "defaultBranch": "master",
@@ -8,7 +8,7 @@
   },
   "test": {
     "mode": "public-grading",
-    "command": "npm test",
+    "command": "node --test test/solution.test.js",
     "supportsPrevious": true
   },
   "submission": {
@@ -21,5 +21,39 @@
       "*.txt"
     ],
     "waitForVerificationSeconds": 30
+  },
+  "grading": {
+    "questions": [
+      {
+        "id": "q1",
+        "mode": "exam",
+        "prompt": "Multiple Choice: Answer all three parts (a), (b), (c) about algorithm complexity.",
+        "points": 45,
+        "answerFile": "q1.txt",
+        "type": "short_answer",
+        "modelAnswer": "Multiple Choice Answers:n(a) A, D, En(b) Only An(c) A, D",
+        "gradingCriteria": "Award full credit for exact matches. Partial credit 15 pts each: part (a), part (b), part (c)."
+      },
+      {
+        "id": "q2",
+        "mode": "exam",
+        "prompt": "Algorithm Design: Describe an O(n) divide-and-conquer algorithm for max sub-array product.",
+        "points": 35,
+        "answerFile": "q2.txt",
+        "type": "long_answer",
+        "modelAnswer": "Divide array into two halves, recursively find max sub-array product, max/min prefix/suffix products, and total product for each half. Combine results: maxProd = max(LmaxProd, RmaxProd, LmaxSuff*RmaxPre, LminSuff*RminPre). Running time: O(n), recurrence T(n) = 2T(n/2) + O(1).",
+        "gradingCriteria": "Key elements: (1) divide-and-conquer structure 10pts, (2) correct combining step 15pts, (3) correct O(n) runtime analysis 10pts."
+      },
+      {
+        "id": "q3",
+        "mode": "exam",
+        "prompt": "Proof by Induction: Prove that g(n) = O(log log n) using strong induction.",
+        "points": 20,
+        "answerFile": "q3.txt",
+        "type": "long_answer",
+        "modelAnswer": "Define g(n) recursively, base cases n <= 4. Inductive Hypothesis: g(n) <= log log n + 1. Use strong induction, apply hypothesis to g(floor(sqrt(n))), conclude g(n) = O(log log n).",
+        "gradingCriteria": "Key elements: (1) correct base cases 5pts, (2) correct inductive hypothesis 5pts, (3) valid inductive step with sqrt argument 10pts."
+      }
+    ]
   }
 }
