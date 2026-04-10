@@ -2,7 +2,7 @@
   "projectKey": "cs161/exam1",
   "releaseVersion": "2026-03-01",
   "apiBaseUrl": "https://nibras-api.fly.dev",
-  "defaultBranch": "main",
+  "defaultBranch": "master",
   "buildpack": {
     "node": "20"
   },
@@ -17,7 +17,8 @@
       "src/**",
       "test/**",
       "README.md",
-      "package.json"
+      "package.json",
+      "*.txt"
     ],
     "waitForVerificationSeconds": 30
   }
