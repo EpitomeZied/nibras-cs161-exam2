@@ -4,3 +4,4 @@ Combine results: maxProd = max(LmaxProd, RmaxProd, LmaxSuff*RmaxPre, LminSuff*Rm
 Max prefix/suffix and total product calculated accordingly.
 Running time: O(n), recurrence T(n) = 2T(n/2) + O(1)
 
+
